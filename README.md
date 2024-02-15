@@ -118,11 +118,10 @@ Basit Ubuntu Komutları
 Sunucu satın aldığınızda ilk bağlantıdan sonra yapmanız gereken gerekenler;
 
 Güncelleme: sudo apt update -y && sudo apt upgrade -y
-Restart: sudo reboot
-Gereklilikler: sudo apt install curl build-essential pkg-config libssl-dev git wget jq make gcc chrony clang screen -y
-Screenleri listeleme: screen -ls
-Sunucu disk boyutlarını listeleme: df -h
-En yüksek boyutlu dosyaları listeleme: find -type f -exec du -Sh {} + | sort -rh | head -n 5
-Sunucuda çalışan programlar ve sunucu özellikleri: htop
 
+Restart: sudo reboot
+
+Screenleri listeleme: screen -ls
+
+Sunucu disk boyutlarını listeleme: df -h
 
