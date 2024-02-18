@@ -26,7 +26,6 @@ Node kurmak için bir servera ihtiyacınız vardır. Server aslında sizin evini
 
 
 
-
 Sunucu Almak için Ne Tavsiye Edersiniz?
 
 Eğer ilk defa node çalıştıracaksınız ücretsiz deneme kredileri sunan siteleri tercih etmeniz önerilir. Fakat burada dikkat edilmesi gereken bazı önemli konular vardır.
@@ -94,14 +93,17 @@ Bu sunucu özelliklerine göre değişir.Sunucuda farklı projeler de çalışt�
 
 
 Bir Sunucu da 2. Node Nasıl Çalıştırabilirim
+
 Bu önerilen bir yöntem değil ama sunucu özellikleriniz yeterliyse 2. node çalıştırabilirsiniz. Dikkat etmeniz gereken nokta diğer node ile aynı portları kullanmaması. Sonrasında ilk node kurulumunda olduğu gibi komutları tek tek girerek kurulumu gerçekleştirebilirsiniz.
 
 Node Kurdum Ama Kurduğum Node Sürekli Kapanıyor
+
 Bu genelde yaptığınız bir hatadan kaynaklanıyor. Node kurulumlarında genel olarak docker isimli program yada sunucuda ‘’screen’’ özelliği kullanılır.
 Docker node ile siz kapatmadığınız yada durdurmadığınız sürece çalışır.
 Screen ise ekrandır. O ekranda girdiğiniz komut siz kapatana kadar çalışır. 
 
 Screen açmak için;
+
 screen -S XXXXX
 Kodu girilir. Node yada komut girdikten sonra, o ekranın arka planda sürekli çalışabilmesi için ctrl+a+d tuşları ile çıkılır.
 Tekrar o screen e logları vs. görmek için girilmek istenirse,
@@ -109,6 +111,7 @@ screen -r XXXXX şeklinde girilmesi gerekir. Ve çıkarken yine ctrl+a+d ile ç�
 Eğer yanlışlıkla screen ekranını kapatırsanız node çalışmayı durdurur. Tekrar screen açıp komutu tekrar çalıştırmalısınız.
 
 Sunucuya Reset Atsam Node Durur Mu?
+
 Eğer screen ile çalışıyorsa screen kapanır ve yeniden screen açarak çalıştırma komutlarını girmelisiniz.
 
 Eğer docker ile kurulum yaptıysanız sunucu yeniden başladıktan bir süre sonra başlayacaktır. Başlamazsa docker container id komutunuzla tekrar başlatabilirsiniz.
